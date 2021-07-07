@@ -1,6 +1,13 @@
+const gameOverImg = new Image();
+gameOverImg.src = './images/gameover.png';
+const winnerImg = new Image();
+winnerImg.src = './images/awesome.png';
+
+
 class HangmanCanvas {
   constructor(secretWord) {
     this.context = document.getElementById('hangman').getContext('2d');
+    this.secretWord = secretWord;
     // ... your code goes here
   }
 
